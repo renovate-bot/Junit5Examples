@@ -15,31 +15,16 @@ import org.junit.runner.RunWith;
 @RunWith(JUnitPlatform.class)
 public class RepeatedInvocationsTest {
 	
-	@BeforeAll
-	public static void init(){
-		System.out.println("Before All init() method called");
-	}
-	
-	@BeforeEach
-	public void initEach(){
-		System.out.println("Before Each initEach() method called");
-	}
+// 1- create double method to show message before all and before each
 
-	@DisplayName("Add operation test")
-	@RepeatedTest(5)
-	void addNumber(TestInfo testInfo, RepetitionInfo repetitionInfo) 
+	// 2- test title
+	// 3- repeat it 5 times
+	void addNumber(TestInfo testInfo, RepetitionInfo repetitionInfo)
 	{
 		System.out.println("Running addNumber test -> " + repetitionInfo.getCurrentRepetition());
-		Assertions.assertEquals(2, Calculator.add(1, 1), "1 + 1 should equal 2");
+		// 4- create test with assertEquals
 	}
 	
-	@AfterEach
-	public void cleanUpEach(){
-		System.out.println("After Each cleanUpEach() method called");
-	}
-	
-	@AfterAll
-	public static void cleanUp(){
-		System.out.println("After All cleanUp() method called");
-	}
+
+	// 5- double clean method after all and after each
 }

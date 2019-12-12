@@ -12,27 +12,13 @@ public class ExpectedExceptionTest
 {
 	@Test
 	void testExpectedException() {
-
-		Assertions.assertThrows(NumberFormatException.class, () -> {
-			Integer.parseInt("One");
-		});
+		// 1- assert throw this exception : NumberFormatException
 
 	}
 
 	@Test
 	void testExpectedExceptionWithSameType() {
-
-		Assertions.assertThrows(IllegalArgumentException.class, () -> {
-			Integer.parseInt("One");
-		});
+		// 2- assert throw this exception : IllegalArgumentException
 	}
-	
-	/*@Test
-	void testExpectedExceptionFail() {
-	 
-	  Assertions.assertThrows(IllegalArgumentException.class, () -> {
-	    Integer.parseInt("1");
-	  });
-	 
-	}*/
+
 }

@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
 @SelectPackages("com.howtodoinjava.junit5.examples")
-@IncludeTags("dev")
-@ExcludeTags({"prod","sit"})
+// 1- include dev
+// 2- exclude prod
 public class MultipleTagsExample {
 
 }

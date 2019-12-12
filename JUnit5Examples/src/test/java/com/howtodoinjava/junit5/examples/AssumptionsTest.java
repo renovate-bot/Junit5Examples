@@ -8,15 +8,15 @@ public class AssumptionsTest
 	@Test
     void testOnDev()
     {
-        System.setProperty("ENV", "DEV");
+        // 1- set dev env
         Assumptions.assumeTrue("DEV".equals(System.getProperty("ENV")), AssumptionsTest::message);
     }
       
     @Test
     void testOnProd()
     {
-        System.setProperty("ENV", "PROD");
-        Assumptions.assumeFalse("DEV".equals(System.getProperty("ENV"))); 
+        // 2- set prod env
+        // 3- test it with assumption
     }
       
     private static String message () {

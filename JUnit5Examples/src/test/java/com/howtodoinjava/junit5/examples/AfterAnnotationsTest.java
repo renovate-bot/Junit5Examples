@@ -13,20 +13,20 @@ import org.junit.runner.RunWith;
 @RunWith(JUnitPlatform.class)
 public class AfterAnnotationsTest {
 
-	@DisplayName("Add operation test")
-	@RepeatedTest(5)
-	void addNumber(TestInfo testInfo, RepetitionInfo repetitionInfo) 
+	// 1- test title
+	// 2- repeat test 5 times
+	void addNumber(TestInfo testInfo, RepetitionInfo repetitionInfo)
 	{
 		System.out.println("Running test -> " + repetitionInfo.getCurrentRepetition());
 		Assertions.assertEquals(2, Calculator.add(1, 1), "1 + 1 should equal 2");
 	}
 	
-	@AfterAll
+	// 3-do it after all
 	public static void cleanUp(){
 		System.out.println("After All cleanUp() method called");
 	}
 	
-	@AfterEach
+	// 4-do it after each
 	public void cleanUpEach(){
 		System.out.println("After Each cleanUpEach() method called");
 	}

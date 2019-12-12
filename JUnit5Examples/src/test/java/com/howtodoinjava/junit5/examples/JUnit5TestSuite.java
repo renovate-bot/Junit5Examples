@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @RunWith(JUnitPlatform.class)
 @SelectPackages("com.howtodoinjava.junit5.examples")
 @IncludePackages("com.howtodoinjava.junit5.examples.packageC")
-@ExcludeTags("PROD")
+// 1- exclude prod
 public class JUnit5TestSuite {
 
 }

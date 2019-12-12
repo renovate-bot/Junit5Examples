@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
 
-@Tag("development")
+// 1- we wanna test development
 public class ClassATest
 {
 	@Test

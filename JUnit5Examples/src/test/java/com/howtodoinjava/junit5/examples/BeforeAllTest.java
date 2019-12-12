@@ -19,8 +19,5 @@ public class BeforeAllTest {
 		Assertions.assertEquals(2, Calculator.add(1, 1), "1 + 1 should equal 2");
 	}
 	
-	@BeforeAll
-	public static void init(){
-		System.out.println("Before All init() method called");
-	}
+	// 1- method before all show message
 }

@@ -19,14 +19,6 @@ public class BeforeEachTest {
 		System.out.println("Running test -> " + repetitionInfo.getCurrentRepetition());
 		Assertions.assertEquals(2, Calculator.add(1, 1), "1 + 1 should equal 2");
 	}
-	
-	@BeforeAll
-	public static void init(){
-		System.out.println("BeforeAll init() method called");
-	}
-	
-	@BeforeEach
-	public void initEach(){
-		System.out.println("BeforeEach initEach() method called");
-	}
+
+	// 1- method before each show message
 }

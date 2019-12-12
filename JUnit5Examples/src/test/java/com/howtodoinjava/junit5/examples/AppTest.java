@@ -10,27 +10,27 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
  
 public class AppTest {
-     
-    @BeforeAll
+
+    // 4-before all
     static void setup(){
         System.out.println("@BeforeAll executed");
     }
-     
-    @BeforeEach
+
+    // 5- before each
     void setupThis(){
         System.out.println("@BeforeEach executed");
     }
      
-    @Tag("DEV")
+    // 1- test for dev
     @Test
     void testCalcOne()
     {
         System.out.println("======TEST ONE EXECUTED=======");
         Assertions.assertEquals( 4 , Calculator.add(2, 2));
     }
-     
-    @Tag("PROD")
-    @Disabled
+
+    // 2-test for prod
+    // 3-ignored test
     @Test
     void testCalcTwo()
     {
