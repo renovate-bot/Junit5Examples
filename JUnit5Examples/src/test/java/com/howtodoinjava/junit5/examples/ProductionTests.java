@@ -9,6 +9,6 @@ import org.junit.runner.RunWith;
 @SelectPackages("com.howtodoinjava.junit5.examples")
 
 // inclure un tag "prod"
-public class ProductionTests 
+public class ProductionTests
 {
 }

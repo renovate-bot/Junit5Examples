@@ -11,17 +11,17 @@ import org.junit.jupiter.api.Test;
  
 public class AppTest {
 
-    // 4-before all
+    // 1- exécuter avant tous
     static void setup(){
         System.out.println("@BeforeAll executed");
     }
 
-    // 5- before each
+    // 2- exe avant chacun
     void setupThis(){
         System.out.println("@BeforeEach executed");
     }
      
-    // 1- test for dev
+    // 3- c'est un test de DEV
     @Test
     void testCalcOne()
     {
@@ -29,21 +29,22 @@ public class AppTest {
         Assertions.assertEquals( 4 , Calculator.add(2, 2));
     }
 
-    // 2-test for prod
-    // 3-ignored test
+    // 4- c'est un test de prod
+    // 6- ignorer ce test
     @Test
     void testCalcTwo()
     {
         System.out.println("======TEST TWO EXECUTED=======");
-        Assertions.assertEquals( 6 , Calculator.add(2, 4));
+
+        // 5- tester l'addition de 4  et 2
     }
-     
-    @AfterEach
+
+    // 7- exe après chacun
     void tearThis(){
         System.out.println("@AfterEach executed");
     }
-     
-    @AfterAll
+
+    // 8- exex après tous
     static void tear(){
         System.out.println("@AfterAll executed");
     }
