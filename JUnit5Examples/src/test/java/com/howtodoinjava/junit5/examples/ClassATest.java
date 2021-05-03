@@ -8,7 +8,7 @@ import org.junit.jupiter.api.TestInfo;
 public class ClassATest
 {
 	@Test
-	@Tag("userManagement")
+	// tagger le test (tag de votre choix)
 	void testCaseA(TestInfo testInfo) {
 	}
 }

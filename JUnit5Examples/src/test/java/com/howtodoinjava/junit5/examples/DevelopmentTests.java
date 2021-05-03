@@ -7,6 +7,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
 // 1- defined tested package
+
+// 2- je veux inclure le tag "development"
 @IncludeTags("development")
 public class DevelopmentTests 
 {

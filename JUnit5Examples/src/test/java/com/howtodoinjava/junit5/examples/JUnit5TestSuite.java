@@ -7,9 +7,9 @@ import org.junit.platform.suite.api.SelectPackages;
 import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
-@SelectPackages("com.howtodoinjava.junit5.examples")
-@IncludePackages("com.howtodoinjava.junit5.examples.packageC")
-// 1- exclude prod
+// 1- selectionné le package principale
+// 2- inclure le package C
+// 3- exclure prod
 public class JUnit5TestSuite {
 
 }

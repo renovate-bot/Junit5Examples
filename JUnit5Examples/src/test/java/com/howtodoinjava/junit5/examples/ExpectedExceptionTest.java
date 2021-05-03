@@ -7,8 +7,9 @@ import org.junit.platform.suite.api.SelectPackages;
 import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
-@SelectPackages("com.howtodoinjava.junit5.examples")
-public class ExpectedExceptionTest 
+
+// Je veux sélectionné le package principale
+public class ExpectedExceptionTest
 {
 	@Test
 	void testExpectedException() {

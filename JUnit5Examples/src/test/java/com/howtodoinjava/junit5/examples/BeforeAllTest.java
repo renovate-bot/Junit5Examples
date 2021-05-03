@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 public class BeforeAllTest {
 
 	@DisplayName("Add operation test")
-	@RepeatedTest(5)
+	// Répéter 3 fois
 	void addNumber(TestInfo testInfo, RepetitionInfo repetitionInfo) {
 		System.out.println("Running test -> " + repetitionInfo.getCurrentRepetition());
 		Assertions.assertEquals(2, Calculator.add(1, 1), "1 + 1 should equal 2");
