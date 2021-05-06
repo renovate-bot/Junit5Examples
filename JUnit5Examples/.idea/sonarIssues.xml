@@ -3,12 +3,22 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$PROJECT_DIR$/src/main/java/com/howtodoinjava/junit5/examples/Calculator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/test/java/com/howtodoinjava/junit5/examples/AfterAnnotationsTest.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/test/java/com/howtodoinjava/junit5/examples/AppTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/howtodoinjava/junit5/examples/AssumptionsTest.java">
           <value>
             <set />
           </value>
@@ -49,6 +59,26 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/test/java/com/howtodoinjava/junit5/examples/ProductionTests.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/howtodoinjava/junit5/examples/RepeatedInvocationsTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../exemple-first-tdd-test/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../exemple-first-tdd-test/src/main/java/Calculator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../exemple-first-tdd-test/src/test/java/CalculTest.java">
           <value>
             <set />
           </value>
