@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
 @SelectPackages({"com.howtodoinjava.junit5.examples.packageA"
-				,"com.howtodoinjava.junit5.examples.packageB"})
+        , "com.howtodoinjava.junit5.examples.packageB"})
 @IncludeClassNamePatterns({"^.*ATests?$"})
 @IncludeTags("production")
 public class JUnit5TestSuiteExample {
